@@ -13,6 +13,10 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 
-hello <- function() {
-  print("Hello, world!")
+fibonacci <- function(n) {
+  if (n <= 1) {
+    return(n)
+  } else {
+    return(fibonacci(n-1) + fibonacci(n-2))
+  }
 }
